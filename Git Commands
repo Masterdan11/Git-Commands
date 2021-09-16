@@ -1,0 +1,32 @@
+sudo yum install git -y  ------for redhat linux, centos, amazon linux
+sudo apt-get install git -y ----for ubuntu or debian
+git
+ssh -keygen ------to generate public and private key
+git clone  ----- to clone git repository
+git add ---- to move file from local directory to staging area
+git status -----to see the location of a file and all files that have been modified
+git commit ------- to move file to remote repository
+git log------- to see all commited files
+-m  ----- to comment e.g git commit -m "created a java file"
+git log ----- to see the commited file version, information about who commited and reason for committing
+git push------ to push changes to remote repository
+-u -----means upstream--used to add a branch to a remote repository e.g git push -u origin bug102
+origin -----means remote
+master ------means branch      
+
+git push -u origin master (How to push changes to romte repository)
+
+git branch  -----to see the local branches
+
+git branch -r -------to see the remote branches
+git branch -a ------- to see all branches (both local and remote) and my current working directory
+
+git pull ----- to pull all changes from remote repository to local repository
+
+git checkout ------ to switch to a new branch e.g git checkout bug100
+
+cat .git/config  ----- to see the relationship between remote branch and local branch
+
+git merge (Most time you only use the user insterface) e.g git merge bug102
+
+-b ----- to create a branch and also to check out to the new branch e.g git checkout -b bug103
